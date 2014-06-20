@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf=8">
+	<link rel="shortcut icon" href="http://i.imgur.com/lVGYCnh.png" type="image/x-icon" />
+		<style type="text/css">
+		
+
+#stars div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#stars .large {
+    background: url('https://i.imgur.com/vPUJWKD.png');
+}
+
+#stars .medium {
+    background: url('https://i.imgur.com/udVJbII.png');
+}
+
+#stars .small {
+    background: url('https://i.imgur.com/sJTyVSJ.png');
+}			
+#stars .moon {
+	background: url('https://i.imgur.com/BlT0RPJ.png');
+	position: fixed;
+	right:-600px;
+	bottom: -400px;
+	width: 1300px;
+	height: 1000px;
+	background-repeat: no-repeat
+}
+body { 
+   background-color:black;
+   margin: 0;
+   overflow: hidden;
+   font-family: sans-serif;
+}
+
+.videoWrapper { /* not 100% sure how these work, I made them to sort of force the youtube api to take shape back in the day and never really did anything else with them */
+    position: absolute;
+	top: 260px;
+	width: 70%;
+	padding-bottom: 33.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0; 
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 22%;
+    width: 100%;
+    height: 87%;
+}
+
+
+.wrapper { 
+	max-width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	background:  #476d99 url('http://i.imgur.com/5D6od60.png'); /* Old browsers */
+	position: relative;
+	top: 10px;
+	bottom: 10px;
+	border-radius: 2em;
+	height: 220px;
+}
+
+.miniwrapper {
+	position: relative;
+	top: 5px;
+	max-width: 95%;
+	height: 190px ;
+	margin: 0 auto;
+	border-radius: 2em;
+	border: 10px solid black;
+	border-left-width:5px;
+	border-right-width:5px;
+}
+
+.minibox{ /* these are the boxes on the page that have the title/logo/controls */
+	color: white;
+	padding:10px;
+	width:30%;
+	height: 180px;
+	margin: 10px 0;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center; 
+	font-size: 15px;
+}
+.logoblinker{
+	position: relative; 
+}
+#logo {
+	font-family: "Bangers", Arial, sans-serif;
+	width: 20%;
+	margin: 0;
+}
+
+#logoimg {
+	width:50%;
+	float: left;
+	display: block;
+	max-width: 50%;
+	vertical-align: middle;
+}
+
+h1 {
+	float: right;
+	display: block;
+	max-width: 50%;
+	font-size: 30px;
+}
+
+
+.text_line /* think this is spacing something */
+{
+	clear:both; display:block; height:1px; margin:-1px 0 0 0; 
+}
+
+.button{ 
+	background-color:#F8F8F8;
+	padding:10px;
+	text-decoration:none;
+	border-radius:20px;
+	border: 0;
+	text-align: left;
+	color: #476d99;
+}
+.whiteuibox{
+	background: #FFFFFF;
+	color:#476d99;
+	border-radius: 2em;
+	float: left;
+	width:40%;
+	height:30%;
+	font-weight:bold;
+	position: relative;
+	left: 25%;
+	font-size: 30px;
+	line-height: 1.75;
+}	
+.whiteuiempty{
+	border-radius: 2em;
+	border-style: solid;
+	border-width: 5px;
+	width:80%;
+	height:25%;
+	font-size: 37px;
+	font-weight:bold;	
+	position: relative;
+	left: 25%;
+}
+/* Clearfix */
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+</style>
+		<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+		<!-- Youtube API will end up here -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> //gotta have that jquery</script>		
+		<script src="http://w.soundcloud.com/player/api.js"> //soundcloud api in the house</script>
+		<script>
+var arval = " ";//for a random number generator
+var stationstyle = " ";//for a different number generator
+var streak = 0;//keeps track of your streak
+var doin = 7; //sets the varible the stationstyle flips between youtube in sound cloud on. I should really merge these two arrays, and be storing the youtube vs sound cloud in a sub array or figuring out from the url
+var stxt ="https://soundcloud.com/phoniksbeats/nas-it-aint-hard-to-tell,https://soundcloud.com/domenickavanzi/abadon-vip-wip,https://soundcloud.com/parkinson-white/parkinson-white-kenway-shanty,https://soundcloud.com/dark-horse-tunes,https://soundcloud.com/501dubz/zedd-shave-it-501-remix,https://soundcloud.com/tesher/move-that-dope,https://soundcloud.com/blacktigersexmachine/on-the-run,https://soundcloud.com/zhu/paradise-awaits,https://soundcloud.com/maddecent/sets/dawn-golden-all-i-want,https://soundcloud.com/jaceistruth/amber,https://soundcloud.com/tennysonmusic/smother-tennyson-remix,https://soundcloud.com/mixmag-1/in-session-koan-sound-asa,https://soundcloud.com/j2n4me/who-let-the-frog-say,https://soundcloud.com/kaytranada/alunageorge-kaleidoscope-love#t=0:00,https://soundcloud.com/jaceandmatty/beautiful-dystopia,https://soundcloud.com/the-melt/snorlax-bakra-gets-rinsed?in=the-melt%2Fsets%2Fsnorlax-from-the-ghetto-tm004,https://soundcloud.com/cashmerecat/feadzkitocash,https://soundcloud.com/thearchive/dj-shadow-scale-it-back,https://soundcloud.com/dashtotald/lights-dash-totald-bootleg,https://soundcloud.com/djcflo/i-need-your-love-x-bottoms-up?in=djcflo/sets/edmjams,https://soundcloud.com/djcflo/i-need-your-love-x-bottoms-up?in=djcflo%2Fsets%2Fedmjams,https://soundcloud.com/awe/crystals,https://soundcloud.com/dark-horse-tunes/living-on-a-cliff,https://soundcloud.com/rory-partridge/99-thrift-shops,https://soundcloud.com/mashupgermany/mashup-germany-cant-hold?in=eshanksy/sets/mashup,https://soundcloud.com/hearts-and-daggers/abbadon-wip,https://soundcloud.com/hearts-and-daggers/progressive-house-wip,https://soundcloud.com/forestswords/thors-stone,https://soundcloud.com/chilldream/d,https://soundcloud.com/jaceistruth/horns-jace-instrumental,https://soundcloud.com/jaceistruth/matt-and-kim-daylight-remix,https://soundcloud.com/phantogram/black-out-days-6,https://soundcloud.com/koan-sound/sanctuary-ep-preview,https://soundcloud.com/futureclassic/new-navy-regular-town-baio-1,https://soundcloud.com/dubz-p,https://soundcloud.com/proleter-beatmaker/proleter-april-showers?fb_action_ids=10201107286098973&fb_action_types=soundcloud%3Alisten&fb_source=other_multiline&action_object_map=%7B%2210201107286098973%22%3A10150623034652139%7D&action_type_map=%7B%2210201107286098973%22%3A%22soundcloud%3Alisten%22%7D&action_ref_map=%5B%5D,good....https://soundcloud.com/bassnectar/take-you-down-special-edit/s-UJ49R,https://soundcloud.com/bassnectar/take-you-down-special-edit/s-UJ49R,https://soundcloud.com/jaceistruth/r-kelly-ignition-remix-jace,https://soundcloud.com/athenshelp/sets/summer-2013?utm_source=soundcloud&utm_campaign=share&utm_medium=facebook,https://soundcloud.com/jaceistruth/marios-castle,https://soundcloud.com/jaceistruth/you-were-saying,https://soundcloud.com/jaceistruth/only-a-dream,https://soundcloud.com/jaceistruth/hunchback,https://soundcloud.com/jaceistruth/the-intro,https://soundcloud.com/dj_zoolanda/zoolanda-moite-original-mix,https://soundcloud.com/jaceistruth/8bitdub,https://soundcloud.com/mad-egg/ppppm,https://soundcloud.com/hrmnzr/you-should-become-a-magical,https://soundcloud.com/unlikely_futures/dvbbs-we-are-electric-unlikely,https://soundcloud.com/electricmoon/spaceman-electric-moon,https://soundcloud.com/themmachine/moon-song,https://soundcloud.com/rickycervantes/jesus-is-my-nigga-west-dubuque,https://soundcloud.com/big-chocolate/bypass,https://soundcloud.com/seven-lions/velvetine-the-great-divide,https://soundcloud.com/oliver-guerra/sets/the-og-beat-cd-vol-1,https://soundcloud.com/hearts-and-daggers/this-sucks";
+var txt ="pc4sO8Nktgk,36lkHXYs4aY,--PSuP-6bdI,N7dz_nbIxpY,5LFB3I3ASsQ,X9HQWjz0aLM,t9z2SKcr7_c,iq_d8VSM0nw,XtW6HW8jO_U,mKSBWqQ2i20,lSooYPG-5Rg,0FgZTTLvgYM,O9V-8kGQVWQ,iL5rJj6p160,pYsEP1TvHeM,HMUDVMiITOU,4wpifScnTn0,agmKa_CON9k,_MC_PqaJYTo,NdmwPadDlgQ,lyP94nBy2sg,undefined,M-CIJhKbVTE,mOV4PKZgqOo,CjwwmFrsX_E,94IdL3djJVU,yTzu0mGnQGU,AU8AWSLoN-c,2NzA4XLjRaM,zR2BboZeLEw,S92nxs7MIJw,KolzCafoaxo,8Uee_mcxvrw,jHPEOh22UH4,-zobNiAG0XA,jxzHwXvG_5Q,FZu097wb8wU,_kE0pxRkMtQ,SW9H1b7zXUY,W1gskj1VQR0,ZyaK3jo4Sl4,0Ba8zFBy0k0,LoW8l2q5wDk,GRj7-Ymrh5E,BJ-rNtSeVC4,PMBHVZArNyo,hdUB1hq5lVg,5m8jD0itiPM,I346jc_zsBg,uYxVo76E4X8,OJQyTnD74gk,jZh5sftZVZ0,7BurNCK5Pc8,NcS_AHCAWG0,pAjH4VFHCgM,D3kQHZmQmVI,VUGrnBJabEo,Z6ih1aKeETk,8R2edW-oc6o,bcnIhzaDTd0,YYpimokjfYw,lYlrJ9EwiYA,WhmyWYmO3uA,KHgkMSbnl0o,94sO8jugWso,o5Z265DGjpQ,kTn0li1q1O0,-bMW3PQ5PnA,HK71dOADp-A,Z4mbxaa3XL8,wv0iUKb80C8,vZgMRw12-M4,G3k6FM2OhKo,UdlL9aqPjss,zuiCEiEByHw,OydK91JjFOw,PSaBzaar7dI,RWQMg56ZVZY,HC6vss-WnNM,uvDzaQOSZ3E,1Oq5BS8E5D0,mwLbOg_7pwY,7-KlLriSLRs,vd-0jJj6rn0,qoUND938YRE,rmLAWwRglSU,9yC3ZtFNajw,HjEQ0oAyn5Q,oV_RxONMESk,t7rimWfeeqQ,yEig-nNxoWE,zYsAk4vZpfg,cI9G1ItAqfk,Zrh3ngSZNBE,yX4iIPlwS5c,gxdvWcq8FjY,qumTkdShLvI,ESAHQRm8POA,izJVk3CCXtw,9K7rmxjk5RQ,jofNR_WkoCE,b3qy23UIynU,RZw-qTtcHOA,Oy_J9J_nwCw,Gm-bzIa2RA8,5u4MYHE_cIk,ayoxnZm6nqI,Hm1s-s4WhvE,lNY_Du6pBUU,uHgzhwtcbz0,qMYMC6atRoE,uM7DQYCg03w,33KjTfPg5ZE,bbLz5lNcHi0,e9F3Ud1VZgk,HJ3slVwBWkA,EkkpRE660Ls,kNct-j35pk0,LFmxjB02FTc,_RoxhWM8yH0,Jr9sy2CYnhY,J6ujLGsONW0,PwKMH2HXQ80,kXpn8thEGbE,LEtlbQnfhxU,GTKmxBtaMF4,-PZhroSY8-I,NINFMzvk-Qo,K5rx_dpcyKQ,eYCvbBurPQY,rVeMiVU77wo,Ws4knlMksKo,f_VmyoAnT98,lM-k1-hlemQ,3Vsbc0oR6fE,bEh2iECS0To,42MAk4_DBFc,Cn-r6rbuIfM,PCKxnIbbCJ4,nHQNQFd21wQ,OmJ5MLhGxoI,51Bpx63wkbA,l4-ITypGWq4,Lemj0NHE3k0,NvOTBwJ7-9o,0q-S1U5w7fA,nAZTCK367zI,J535V9uXNq4,4dpSIFMz_GA,_3EMJRxoIMI,vGvQ6LtkPwc,iOhpjcvtyVE,G7ohJ-bN4X8,gdbLFjcRvtk,9oLvoAFSVJw,6ktYpaGVUe0,vuHNDnta9jc,o7PEnj-8NHw,btYMd6IfHDk";
+var sicknewmusicstxt ="https://soundcloud.com/phoniksbeats/nas-it-aint-hard-to-tell,https://soundcloud.com/domenickavanzi/abadon-vip-wip,https://soundcloud.com/parkinson-white/parkinson-white-kenway-shanty,https://soundcloud.com/dark-horse-tunes,https://soundcloud.com/501dubz/zedd-shave-it-501-remix,https://soundcloud.com/tesher/move-that-dope,https://soundcloud.com/blacktigersexmachine/on-the-run,https://soundcloud.com/zhu/paradise-awaits,https://soundcloud.com/maddecent/sets/dawn-golden-all-i-want,https://soundcloud.com/jaceistruth/amber,https://soundcloud.com/tennysonmusic/smother-tennyson-remix,https://soundcloud.com/mixmag-1/in-session-koan-sound-asa,https://soundcloud.com/j2n4me/who-let-the-frog-say,https://soundcloud.com/kaytranada/alunageorge-kaleidoscope-love#t=0:00,https://soundcloud.com/jaceandmatty/beautiful-dystopia,https://soundcloud.com/the-melt/snorlax-bakra-gets-rinsed?in=the-melt%2Fsets%2Fsnorlax-from-the-ghetto-tm004,https://soundcloud.com/cashmerecat/feadzkitocash,https://soundcloud.com/thearchive/dj-shadow-scale-it-back,https://soundcloud.com/dashtotald/lights-dash-totald-bootleg,https://soundcloud.com/djcflo/i-need-your-love-x-bottoms-up?in=djcflo/sets/edmjams,https://soundcloud.com/djcflo/i-need-your-love-x-bottoms-up?in=djcflo%2Fsets%2Fedmjams,https://soundcloud.com/awe/crystals,https://soundcloud.com/dark-horse-tunes/living-on-a-cliff,https://soundcloud.com/rory-partridge/99-thrift-shops,https://soundcloud.com/mashupgermany/mashup-germany-cant-hold?in=eshanksy/sets/mashup,https://soundcloud.com/hearts-and-daggers/abbadon-wip,https://soundcloud.com/hearts-and-daggers/progressive-house-wip,https://soundcloud.com/forestswords/thors-stone,https://soundcloud.com/chilldream/d,https://soundcloud.com/jaceistruth/horns-jace-instrumental,https://soundcloud.com/jaceistruth/matt-and-kim-daylight-remix,https://soundcloud.com/phantogram/black-out-days-6,https://soundcloud.com/koan-sound/sanctuary-ep-preview,https://soundcloud.com/futureclassic/new-navy-regular-town-baio-1,https://soundcloud.com/dubz-p,https://soundcloud.com/proleter-beatmaker/proleter-april-showers?fb_action_ids=10201107286098973&fb_action_types=soundcloud%3Alisten&fb_source=other_multiline&action_object_map=%7B%2210201107286098973%22%3A10150623034652139%7D&action_type_map=%7B%2210201107286098973%22%3A%22soundcloud%3Alisten%22%7D&action_ref_map=%5B%5D,good....https://soundcloud.com/bassnectar/take-you-down-special-edit/s-UJ49R,https://soundcloud.com/bassnectar/take-you-down-special-edit/s-UJ49R,https://soundcloud.com/jaceistruth/r-kelly-ignition-remix-jace,https://soundcloud.com/athenshelp/sets/summer-2013?utm_source=soundcloud&utm_campaign=share&utm_medium=facebook,https://soundcloud.com/jaceistruth/marios-castle,https://soundcloud.com/jaceistruth/you-were-saying,https://soundcloud.com/jaceistruth/only-a-dream,https://soundcloud.com/jaceistruth/hunchback,https://soundcloud.com/jaceistruth/the-intro,https://soundcloud.com/dj_zoolanda/zoolanda-moite-original-mix,https://soundcloud.com/jaceistruth/8bitdub,https://soundcloud.com/mad-egg/ppppm,https://soundcloud.com/hrmnzr/you-should-become-a-magical,https://soundcloud.com/unlikely_futures/dvbbs-we-are-electric-unlikely,https://soundcloud.com/electricmoon/spaceman-electric-moon,https://soundcloud.com/themmachine/moon-song,https://soundcloud.com/rickycervantes/jesus-is-my-nigga-west-dubuque,https://soundcloud.com/big-chocolate/bypass,https://soundcloud.com/seven-lions/velvetine-the-great-divide,https://soundcloud.com/oliver-guerra/sets/the-og-beat-cd-vol-1,https://soundcloud.com/hearts-and-daggers/this-sucks";
+var sicknewmusictxt ="pc4sO8Nktgk,36lkHXYs4aY,--PSuP-6bdI,N7dz_nbIxpY,5LFB3I3ASsQ,X9HQWjz0aLM,t9z2SKcr7_c,iq_d8VSM0nw,XtW6HW8jO_U,mKSBWqQ2i20,lSooYPG-5Rg,0FgZTTLvgYM,O9V-8kGQVWQ,iL5rJj6p160,pYsEP1TvHeM,HMUDVMiITOU,4wpifScnTn0,agmKa_CON9k,_MC_PqaJYTo,NdmwPadDlgQ,lyP94nBy2sg,undefined,M-CIJhKbVTE,mOV4PKZgqOo,CjwwmFrsX_E,94IdL3djJVU,yTzu0mGnQGU,AU8AWSLoN-c,2NzA4XLjRaM,zR2BboZeLEw,S92nxs7MIJw,KolzCafoaxo,8Uee_mcxvrw,jHPEOh22UH4,-zobNiAG0XA,jxzHwXvG_5Q,FZu097wb8wU,_kE0pxRkMtQ,SW9H1b7zXUY,W1gskj1VQR0,ZyaK3jo4Sl4,0Ba8zFBy0k0,LoW8l2q5wDk,GRj7-Ymrh5E,BJ-rNtSeVC4,PMBHVZArNyo,hdUB1hq5lVg,5m8jD0itiPM,I346jc_zsBg,uYxVo76E4X8,OJQyTnD74gk,jZh5sftZVZ0,7BurNCK5Pc8,NcS_AHCAWG0,pAjH4VFHCgM,D3kQHZmQmVI,VUGrnBJabEo,Z6ih1aKeETk,8R2edW-oc6o,bcnIhzaDTd0,YYpimokjfYw,lYlrJ9EwiYA,WhmyWYmO3uA,KHgkMSbnl0o,94sO8jugWso,o5Z265DGjpQ,kTn0li1q1O0,-bMW3PQ5PnA,HK71dOADp-A,Z4mbxaa3XL8,wv0iUKb80C8,vZgMRw12-M4,G3k6FM2OhKo,UdlL9aqPjss,zuiCEiEByHw,OydK91JjFOw,PSaBzaar7dI,RWQMg56ZVZY,HC6vss-WnNM,uvDzaQOSZ3E,1Oq5BS8E5D0,mwLbOg_7pwY,7-KlLriSLRs,vd-0jJj6rn0,qoUND938YRE,rmLAWwRglSU,9yC3ZtFNajw,HjEQ0oAyn5Q,oV_RxONMESk,t7rimWfeeqQ,yEig-nNxoWE,zYsAk4vZpfg,cI9G1ItAqfk,Zrh3ngSZNBE,yX4iIPlwS5c,gxdvWcq8FjY,qumTkdShLvI,ESAHQRm8POA,izJVk3CCXtw,9K7rmxjk5RQ,jofNR_WkoCE,b3qy23UIynU,RZw-qTtcHOA,Oy_J9J_nwCw,Gm-bzIa2RA8,5u4MYHE_cIk,ayoxnZm6nqI,Hm1s-s4WhvE,lNY_Du6pBUU,uHgzhwtcbz0,qMYMC6atRoE,uM7DQYCg03w,33KjTfPg5ZE,bbLz5lNcHi0,e9F3Ud1VZgk,HJ3slVwBWkA,EkkpRE660Ls,kNct-j35pk0,LFmxjB02FTc,_RoxhWM8yH0,Jr9sy2CYnhY,J6ujLGsONW0,PwKMH2HXQ80,kXpn8thEGbE,LEtlbQnfhxU,GTKmxBtaMF4,-PZhroSY8-I,NINFMzvk-Qo,K5rx_dpcyKQ,eYCvbBurPQY,rVeMiVU77wo,Ws4knlMksKo,f_VmyoAnT98,lM-k1-hlemQ,3Vsbc0oR6fE,bEh2iECS0To,42MAk4_DBFc,Cn-r6rbuIfM,PCKxnIbbCJ4,nHQNQFd21wQ,OmJ5MLhGxoI,51Bpx63wkbA,l4-ITypGWq4,Lemj0NHE3k0,NvOTBwJ7-9o,0q-S1U5w7fA,nAZTCK367zI,J535V9uXNq4,4dpSIFMz_GA,_3EMJRxoIMI,vGvQ6LtkPwc,iOhpjcvtyVE,G7ohJ-bN4X8,gdbLFjcRvtk,9oLvoAFSVJw,6ktYpaGVUe0,vuHNDnta9jc,o7PEnj-8NHw,btYMd6IfHDk";
+var polytxt ="xD6VjvfcBIs,29FBvzFU3mA,zR2BboZeLEw,S92nxs7MIJw,KolzCafoaxo,CJBleJJZixs,-SSz_F5wOiM,OfZi1TkZg1o,1Ee4bfu_t3c,XPhPbTbjYM0,YkofRibL_Ww,Ccqb3-rdAMQ,z54MpfR3XE4,sZnJuoFeKyQ,55EoLTC0SdY,0Ba8zFBy0k0,36nWNAvtwrw,LoW8l2q5wDk,brN3m8JIWZE,wXyizmsYpag,imnbyZ4u-7g,BJ-rNtSeVC4,QWaWsgBbFsA,RFJi3l1DPWk,i7X8ZnmLfM0,7BurNCK5Pc8,4Cnm0tdkJEU,OxlJLz9M8hQ,cB9JJIoAdYM,FiRLb8AYgIc,XwXzO7xiSXk,33wQupFvcoE,i4JxY-kiN2Y,bcnIhzaDTd0,i1GIN3xTS28,_ZXeFPpPJeI,VPBapom6ppE,4R9LiynCfCA,rP7oo4sX_EQ,alrMLt5sGUM,EqQuihD0hoI,hdWxo3e3Kzk,Z4mbxaa3XL8,llG3J6Trd_M,FWZf_RBcB_Y,XDvmqGNbRqU,wv0iUKb80C8,TTIVhaMNNNQ,Qu2vj-X16-k,S0ximxe4XtU,WQfTymFHbTA,v582kPp43Mg,44JNpWP-Z8o,OydK91JjFOw,RWQMg56ZVZY,HC6vss-WnNM,zuiCEiEByHw,1Oq5BS8E5D0,uvDzaQOSZ3E,hGi9SOFX5rc,BZY-sZm3qVI,-0mxuJiOEaQ,SPlQpGeTbIE,7Ti_kybY0po,V-GqTr8THJg,swx3Z-eyB54,FmqYmgTDDRU,TBy7jNR5tGI,3ylunl72PyE,z8Q7KjuG0T0,PMBHVZArNyo,JpavK1XTvEc,-fkVvNMuJsA,JL94IJmZTjQ,_RoxhWM8yH0,Gm-bzIa2RA8,jWyye9OneUM,PJZb6P_mVt0,z7ytPNb75Ho,xe5W9PD0I9c,ESAHQRm8POA,bt-RoSzsEKA,Jz5yAmglCR8,UKDihYBMvHQ,1v3CzvQ9e_w,rKTUAESacQM,-JKGfU-fan4,eIgNSYpjgX4,yModCU1OVHY,GQMpqw-i930,Koxa2fsoqyM,Ku_XpO4vdf0,lCY2F3raNt8,kw8o-GTjHP8,jcqjWDx95NA,gok-8dWaLRo,-dRFmZMGRk0,xB29CI1a704,klfjwpoTgEw,mg0dkJfrPYM,Hm1s-s4WhvE,9Wy8bKYOhrA,ZsKuYCy0aPA,k0mRfECsHrc,ev4ESucF53U,g9yaYvrp3B4,ZGMDBppWBOo,dA57OSBrWLk,gS-_HKWsJXg,SYhUpUgxnMs,kS9fSjP2fD8,nCWiogdCMY0,lGdSYPh5_BI,HCh8O3aem5s,ZbJRNqQc8ME,qMYMC6atRoE,Pd1nG6KcH5A,RbZYk0ypPy8,zfr_JsV_z3Y,rbD5dShemps,6WHAnkJFOMs,jMpt9pluq0w,7gphiFVVtUI,hVhAlWllKZM,7YR-AvTDctk,-ktf-Y3pg60,cDxN3ifvc7k,52j2GYmUV6g,UtdaCPOjztU,OffF0e2h4TU,GfbLWHT7vUU,6EfhAFA2yFE,jyLMgIR69G4,OvMfLEdtWLY,ABx4oqeYiIw,_ltvCuci4TM,kNct-j35pk0,LFmxjB02FTc,nVSiwMVaKe4,m01lPNVv90s,SBuIaiZvwg0,nVCMLWtVN5E,W3mb8HEZhRU,Vqq9iOBxOwQ,LB5YkmjalDg,duheoheyp-0,vHXy8zT0tn4,TS1W2xboKSA,kebq-cENNn0,GQMlWwIXg3M,R82OM5tzcrk,NTE4lzeBUNI,gWBG1j_flrg,baExq6xNhQ8,QhIfxUt-Joo,ihUIPlLw2ZE,Rj8yb7tkMK8,34ezwcrqRvo,FqGOy6YapVw,y92IoM_ERcg,AsG1_3OTzyY,NiNTrKsQ8TU,08fqHr_KGPY,KpYAsYzCUFk,LnoDKgeXSPg,bSSn3NddwFQ,BO819Crxh_Q,gbbcei_CMok,8oh5wTDa4M8,mdLo0NptQz4,nvxnUr2JwBo,285LQj1-nHQ,ocrTr56uhyw,ylNWezlt3O4,enRQi_5Nhsw,wf8cWuxweyk,fw-PjvZ4_FA,hglVqACd1C8,T0N5YblvT1c,XXvuUp-KY5g,oY9m2sHQwLs,I8PpySmFJcw,i1N2t7urWHU,2HhSS1hUUjQ,d-vZEShtlJE,5CU7oAS2XkY,RjxvyZbxdr4,i45sk_pg15A,rJSIlQbt67M,c1YVPanmh0Q,-p0rCsuSCcs,3o4hKYNz7mY,Ujzp9ffPwPM,2aHEa-ckBKk,6QJpY2VNP0E,Z78PjvfCVTQ,jFQdvaU-JlY,6T3GMHXgDWA,r9yUCOelxS8,QhH3xho0woU,nlNantlznCA,jOoHAbnhxNI,uEpZ70z0M0k,1_XbYz9J4W0,USXW34U8p_U,86DEKFissl4,I80pc9jZ_t8,-mfEbuOx6IM,yb1oge5nHQk,TJEhkRSnFJE,8afKh4Sfgdo,xdzYh1-MhjY,GN8e-rdrwxY";
+var polystxt = "https://soundcloud.com/djcflo/sets/edmjams,https://soundcloud.com/rory-partridge/99-thrift-shops,https://soundcloud.com/mashupgermany/mashup-germany-cant-hold?in=eshanksy/sets/mashup,https://soundcloud.com/vinyl-junkie-recordings/ringo-deathstarr-flower-power,https://soundcloud.com/mixesandmashups/peter-griffin-vs-skrillex-bird,https://soundcloud.com/ato_records/les-claypools-duo-de-twang/s-J4s5o,https://soundcloud.com/ato_records/les-claypools-duo-de-twang/s-J4s5ohttps://soundcloud.com/ato_records/les-claypools-duo-de-twang/s-J4s5o,https://soundcloud.com/forestswords/thors-stone,https://soundcloud.com/djatat/avicii-levels-remix-full,https://soundcloud.com/athenshelp/sets/summer-2013?utm_source=soundcloud&utm_campaign=share&utm_medium=facebook,https://soundcloud.com/tri_angle_records/the-haxan-cloak-the-mirror";
+var tag = document.createElement('script'); //this is youtube api stuff
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var player; // the end of the youtube api stuff
+var types; // varible that stores youtube vs sound cloud
+var badlist = []; // array for keeping track of recently played
+function writeout (id, data){
+	document.getElementById(id).innerHTML = data;
+}
+function streaks(){ //keeps track of the streak counter and modifies the page to make it display
+	streak++;
+	writeout ("streakcounter", streak);
+}
+function selectastyle(){ // this selects if it's going to be a youtube or sound cloud link
+	var coin= Math.floor(Math.random()*10);
+	if (coin<=doin ){
+		types = 'y';
+		console.log('y');
+		return 'y';
+	}
+	else {
+		types = 's';
+		console.log('s');
+		return 's';
+	}
+}
+function ranvideo(){ //this is what actually selects a video
+	if (types=='y'){
+		var strings= txt.split(",");
+		var prinran= Math.floor(Math.random() * strings.length);
+		arval = strings[prinran];
+		if (recent(arval)=="do"){
+			ranvideo();
+			return;
+		}
+		else{
+			writeout ("satus", arval);
+			youtubeinfo(arval);
+			return arval;
+		}
+	}
+	else{
+		var strings= stxt.split(",");
+		var prinran= Math.floor(Math.random() * strings.length);
+		arval = strings[prinran];
+			if (recent(arval)=="do"){
+				ranvideo();
+				return;
+			}
+			else{
+				writeout ("satus", arval);
+				soundcloudinfo(arval);
+				return arval;
+			}
+	}
+}
+function loadyoutube(ran){ //this loads the youtube video using the api. It's different then change video
+	var elem = document.getElementById("videoWrapper");
+	elem.setAttribute("style"," padding-bottom: 36.25%;");
+	player = new YT.Player('video', {
+		videoId: ran,
+		events: {
+			'onReady': onPlayerReady,
+			'onStateChange': statechange,
+		}
+	});
+	console.log('ys'); 
+}	 
+function loadsoundcloud(ran) { // this loads a sound cloud embeds through the api
+	var elem = document.getElementById("videoWrapper");
+	elem.setAttribute("style"," padding-bottom: 9.25%;");
+	var vid = document.getElementById("video");
+	vid.innerHTML ="<iframe id='soundcloud_widget' src='http://w.soundcloud.com/player/?url=https://api.soundcloud.com/' width='60%' height='120' frameborder='no'> </iframe>";
+    var widget = SC.Widget(document.getElementById('soundcloud_widget'));
+	widget.load(ran,{auto_play : true});
+    widget.bind(SC.Widget.Events.FINISH, function(player, data) {
+		if(document.getElementById("loop").checked){
+			streaks();
+			widget.play();
+		}
+		else{
+			streaks();
+			next(); 
+		}                 
+	});
+	console.log('sy');
+}	
+function onPlayerReady(event) {// this starts a youtube video if it's been loaded
+        event.target.playVideo();
+}
+function statechange(event) { // this is what determines if a youtube video is finished
+	if ( event.data == 0 ) {
+		if(document.getElementById("loop").checked){
+			streaks();
+			player.playVideo();
+		}
+		else {
+			streaks();
+			next(); 
+		}
+	}
+}   
+function next(){ // this is the next button that fast forwards, notice it just sort of calls a bunch of other functions
+	var stype = types;
+	var select = selectastyle();
+	var vi= ranvideo();
+	console.log(stype,vi,select);
+	if (stype=='y'&&select=='y'){ // so the basic way this works is it determines if the existing loaded thing is sound cloud or youtube, and then it will either use the api to load the right player or play a new thing in the excisting one
+		player.loadVideoById(vi);
+	}
+	else if (stype=='s'&&select=='s'){
+		var widget = SC.Widget(document.getElementById('soundcloud_widget'));
+		widget.load(vi,{auto_play : true});
+	}
+	else if (stype=='s'&&select=='y'){
+		pageready();
+		loadyoutube(vi);
+	}
+	else{
+		pageready();
+		loadsoundcloud(vi);
+	}
+}
+function pageready(){ // this loads a video on page ready ( called by loading youtube api the first time)
+	var vid = document.getElementById("videoWrapper");
+	vid.innerHTML = "<p id='video'></p>";
+}
+function onYouTubeIframeAPIReady(){ // This is the first thing that the youtube api calls on loading, not that a youtube video is the thing loaded
+	var select = selectastyle();
+	var vi= ranvideo();
+	console.log(vi,select);
+	if(select=='y'){
+		loadyoutube(vi);
+	}
+	else{
+		loadsoundcloud(vi);
+	}
+}
+function recent(check){ //checks and makes sure the video hasn't reacently been played
+	if(jQuery.inArray(check, badlist)!==-1){
+		return "do";
+	}
+	else{
+		badlist.unshift(check);
+		return "dont";
+	}
+}
+function youtubeinfo(id){ //this gets other info from the you video, like the title
+	var video_id=id;
+	$.getJSON('http://gdata.youtube.com/feeds/api/videos/'+video_id+'?v=2&alt=jsonc',function(data,status,xhr){
+		writeout("ytitle", data.data.title );
+		var longness = data.data.duration; // youtube loads each video with an extra second which it removes. Idon't know why
+		var embededness = data.data.accessControl.embed;// not used yet
+		console.log(embededness);
+		longnessswitch(longness);
+	});
+}
+function longnessswitch(vid) { // this is the thing that runs the <10 min switch
+	if(document.getElementById("tenmin").checked){
+		if (vid >= 601){ // see above for why this is601 and not 600
+			next();
+		}
+	}
+}
+function soundcloudinfo(id){ // sound cloud version of above
+	var video_id=id;
+	$.getJSON('http://api.soundcloud.com/resolve.json?url='+video_id+'&client_id=3baa436db3a25fba35306a68e4d9d0d1',function(data){
+		var longness = data.duration;
+		longness = longness/1000; // sound cloud gives time in stupid units
+		longnessswitch(longness);
+		writeout("ytitle", data.title );	
+	});
+}
+function changestation(){ // this is the thing that switches between the two sets of arrays above
+	var e = document.getElementById("selector");
+	var stationselection = e.options[e.selectedIndex].value;
+	if (stationselection == "POLYPS"){
+		stxt = polystxt;
+		txt = polytxt;
+		doin = 10;
+		console.log("HEY LISTEN");
+	}
+	else{
+		stxt = sicknewmusicstxt;
+		txt = sicknewmusictxt;
+		doin = 7;
+		console.log("PAY ATTENTION");
+	}
+}
+		</script>
+		<title>Space Station Radio</title> 
+	</head>
+	<body>
+		<div id="stars">
+			<div class="large"></div>
+			<div class="medium"></div>
+			<div class="small"></div>
+			<div class="moon"></div>
+		</div>
+		<div class="wrapper">
+			<div class="miniwrapper group">
+				<div class="minibox stretchy1">
+					<button type="button" onclick="next()" class="button">Fast Forward</button> 
+					<p>
+					    <div class="checkbox">  
+							<input type="checkbox" id="loop" name="loop" value="loop"/>
+							<label for="loop">Loop</label>  
+							<input type="checkbox" id="tenmin" name="tenmin" value="thenmin"/>
+							<label for="tenmin">!<10</label>  
+						</div>
+						<br>
+						<p>If this video doesn't work send Andrew this value:
+							<p id="satus">X</p>
+						</p>
+					</p>
+				</div>
+				<div class="minibox group" id="logo">
+					<!-- <img src="http://i.imgur.com/jHJYIww.png"> ( In case it's needed later for whatever )-->
+					<img id="logoimg" src="http://i.imgur.com/lGMxWw7.png" alt="Space Station Logo">
+					<h1>Space Station Radio</h1>
+				</div>
+				<div class="minibox">
+					<div class="whiteuibox">
+						Streak: 
+					</div>	
+					<div class="whiteuiempty">
+					<strong id="streakcounter"> 0 </strong>
+					</div>
+					<br>
+					<div class="whiteuibox">Title:</div><div class="whiteuiempty"> <strong id="ytitle"> 0 </strong></div>
+					<p>
+						<select id="selector" onchange="changestation()">
+							<option value="sicknew">Sick New Music</option>
+							<option value="POLYPS">P.O.L.Y.P.S.</option>
+						</select> 
+					</p>	
+				</div>
+			</div>
+		</div>
+		<div id="videoWrapper" class="videoWrapper">
+			<p id="video"></p>
+		</div>	
+	</body>
+</html>
