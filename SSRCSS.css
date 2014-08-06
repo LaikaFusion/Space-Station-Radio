@@ -1,3 +1,4 @@
+
 #stars div {
     width: 100%;
     height: 100%;
@@ -133,7 +134,7 @@ h1 {
 	font-weight:bold;
 	position: relative;
 	left: 25%;
-	font-size: 30px;
+	font-size: 15px;
 	line-height: 1.75;
 }	
 .whiteuiempty{
@@ -142,10 +143,16 @@ h1 {
 	border-width: 5px;
 	width:80%;
 	height:25%;
-	font-size: 37px;
+	font-size: 17px;
 	font-weight:bold;	
 	position: relative;
 	left: 25%;
+}
+.overflowbox{
+display:block;
+overflow:auto;
+height: 50px;
+text-align:center;
 }
 /* Clearfix */
 .group:after {
