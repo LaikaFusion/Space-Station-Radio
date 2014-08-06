@@ -41,20 +41,20 @@
 					<h1>Space Station Radio</h1>
 				</div>
 				<div class="minibox">
-					<div class="whiteuibox">
+					<div class="">
 						Streak: 
 					</div>	
-					<div class="whiteuiempty">
+					<div class="">
 					<strong id="streakcounter"> 0 </strong>
 					</div>
-					<br>
-					<div class="whiteuibox">Title:</div><div class="whiteuiempty"> <strong id="ytitle"> 0 </strong></div>
-					<p>
-						<select id="selector" onchange="changestation()">
-							<option value="sicknew">Sick New Music</option>
-							<option value="POLYPS">P.O.L.Y.P.S.</option>
-						</select> 
-					</p>	
+					<div class="">Title:</div><div class=""> <strong id="ytitle"> 0 </strong></div>
+					<button type="button" onclick="changestation()" class="button">Change flow</button>
+					<div class="overflowbox">
+						<input type="checkbox" id="sicknew" name="sicknew" value="sicknew"/>
+						<label for="sicknew">Sick New Music</label><br>
+						<input type="checkbox" id="POLYPS" name="POLYPS" value="POLYPS"/>
+						<label for="POLYPS">P. of L.Y.P.S.</label> <br>
+					</div>	
 				</div>
 			</div>
 		</div>
