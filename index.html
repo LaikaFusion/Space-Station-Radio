@@ -2,43 +2,36 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		
+
 		<link rel="shortcut icon" href="http://i.imgur.com/lVGYCnh.png" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="SSRCSS.css" />
-		<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
-		
+
 		<!-- Youtube API will end up here -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script src="http://w.soundcloud.com/player/api.js"></script>
 		<script src="SSRJS.js"></script>
-		
-		<title>Space Station Radio</title> 
-		
+
+		<title>Space Station Radio</title>
+
 	</head>
 	<body>
-		
-		<!-- This the star background and moon image's divs -->
-		<div id="stars">
-			<div class="large"></div>
-			<div class="medium"></div>
-			<div class="small"></div>
-			<div class="moon"></div>
-		</div>
-		
+
+
+
 		<!--start of the control menus-->
 		<div class="wrapper">
 			<div class="miniwrapper group">
-				
-				
-				<!-- This is the rightmost box-->
+
+
+				<!-- This is the leftmost box-->
 				<div class="minibox stretchy1">
-					<button type="button" onclick="next()" class="button">Fast Forward</button> 
+					<button type="button" onclick="next()" class="button">Fast Forward</button>
 					<p>
-					  <div class="checkbox">  
+					  <div class="checkbox">
 							<input type="checkbox" id="loop" name="loop" value="loop"/>
-							<label for="loop">Loop</label>  
+							<label for="loop">Loop</label>
 							<input type="checkbox" id="tenmin" name="tenmin" value="thenmin"/>
-							<label for="tenmin">!<10</label>  
+							<label for="tenmin">!<10</label>
 						</div>
 						<br>
 						<p>If this video doesn't work provide this value:
@@ -46,42 +39,41 @@
 						</p>
 					</p>
 				</div>
-				
-				
+
+
 				<!-- The logo in the center -->
 				<div class="minibox group" id="logo">
 					<!-- <img src="http://i.imgur.com/jHJYIww.png"> ( In case it's needed later for whatever )-->
 					<img id="logoimg" src="http://i.imgur.com/lGMxWw7.png" alt="Space Station Logo">
-					<h1>Space Station Radio</h1>
 				</div>
-				
+
 				<!-- This section is generally a mess -->
 				<div class="minibox">
 					<div class="">
-						Streak: 
-					</div>	
+						Streak:
+					</div>
 					<div class="">
 						<strong id="streakcounter"> 0 </strong>
 					</div>
 					<div class="">Title:</div><div class=""> <strong id="ytitle"> 0 </strong></div>
-					<button type="button" onclick="changestation()" class="button">Change flow</button>
+					<button type="button" onclick="changestation()" class="button">Change playlist</button>
 					<div class="overflowbox">
 						<input type="checkbox" id="sicknew" name="sicknew" value="sicknew" checked />
 						<label for="sicknew">Sick New Music</label><br>
 						<input type="checkbox" id="POLYPS" name="POLYPS" value="POLYPS"/>
 						<label for="POLYPS">P. of L.Y.P.S.</label> <br>
-					</div>	
+					</div>
 				</div>
-				
-				
+
+
 			</div>
 		</div>
-		
-		
+
+
 		<div id="videoWrapper" class="videoWrapper">
 			<p id="video"></p>
 		</div>
 
-		
+
 	</body>
 </html>

@@ -8,17 +8,17 @@ var sicknewmusictxt =[["ZEvQOPUHGH8","y"],["https://soundcloud.com/macross-82-99
 var polytxt =[["kqeYQ_iMzjQ","y"],["Z118lF7vQUw","y"],["snhkO-c-S0c","y"],["0gWK4zvEi2Y","y"],["sBso-UG8R_E","y"],["Yh1q6elS7Ls","y"],["totYCysea4w","y"],["c-jKfLXYQqw","y"],["vfmi0v5vIGo","y"],["V1sWHW8L414","y"],["AlGYwXdgpY8","y"],["xD6VjvfcBIs","y"],["29FBvzFU3mA","y"],["zR2BboZeLEw","y"],["S92nxs7MIJw","y"],["KolzCafoaxo","y"],["CJBleJJZixs","y"],["-SSz_F5wOiM","y"],["KIRlueNEeQo","y"],["OfZi1TkZg1o","y"],["1Ee4bfu_t3c","y"],["XPhPbTbjYM0","y"],["YkofRibL_Ww","y"],["Ccqb3-rdAMQ","y"],["z54MpfR3XE4","y"],["sZnJuoFeKyQ","y"],["55EoLTC0SdY","y"],["0Ba8zFBy0k0","y"],["36nWNAvtwrw","y"],["LoW8l2q5wDk","y"],["brN3m8JIWZE","y"],["wXyizmsYpag","y"],["imnbyZ4u-7g","y"],["3orfxUXy3Uc","y"],["BJ-rNtSeVC4","y"],["QWaWsgBbFsA","y"],["RFJi3l1DPWk","y"],["i7X8ZnmLfM0","y"],["7BurNCK5Pc8","y"],["4Cnm0tdkJEU","y"],["OxlJLz9M8hQ","y"],["cB9JJIoAdYM","y"],["FiRLb8AYgIc","y"],["XwXzO7xiSXk","y"],["33wQupFvcoE","y"],["i4JxY-kiN2Y","y"],["https://soundcloud.com/djcflo/sets/edmjams","s"],["bcnIhzaDTd0","y"],["i1GIN3xTS28","y"],["GRpW6L5mvB8","y"],["_ZXeFPpPJeI","y"],["VPBapom6ppE","y"],["4R9LiynCfCA","y"],["rP7oo4sX_EQ","y"],["alrMLt5sGUM","y"],["EqQuihD0hoI","y"],["hdWxo3e3Kzk","y"],["SIt2CdbBo_w","y"],["https://soundcloud.com/rory-partridge/99-thrift-shops","s"],["Z4mbxaa3XL8","y"],["llG3J6Trd_M","y"],["sulY3bixDxI","y"],["PCL9tN7OLMs","y"],["dtSxNZeXlKg","y"],["HfUKgqEJMq0","y"],["Z5I-Xq54FT4","y"],["EpF1AP7gN8Q","y"],["MWtV4DACpVg","y"],["FWZf_RBcB_Y","y"],["https://soundcloud.com/mashupgermany/mashup-germany-cant-hold?in=eshanksy/sets/mashup","s"],["XDvmqGNbRqU","y"],["wv0iUKb80C8","y"],["TTIVhaMNNNQ","y"],["https://soundcloud.com/vinyl-junkie-recordings/ringo-deathstarr-flower-power","s"],["Qu2vj-X16-k","y"],["S0ximxe4XtU","y"],["https://soundcloud.com/mixesandmashups/peter-griffin-vs-skrillex-bird","s"],["WQfTymFHbTA","y"],["v582kPp43Mg","y"],["44JNpWP-Z8o","y"],["https://soundcloud.com/ato_records/les-claypools-duo-de-twang/s-J4s5o","s"],["https://soundcloud.com/ato_records/les-claypools-duo-de-twang/s-J4s5ohttps://soundcloud.com/ato_records/les-claypools-duo-de-twang/s-J4s5o","s"],["https://soundcloud.com/forestswords/thors-stone","s"],["OydK91JjFOw","y"],["RWQMg56ZVZY","y"],["HC6vss-WnNM","y"],["zuiCEiEByHw","y"],["1Oq5BS8E5D0","y"],["uvDzaQOSZ3E","y"],["hGi9SOFX5rc","y"],["BZY-sZm3qVI","y"],["PImYNoVrsl0","y"],["-0mxuJiOEaQ","y"],["SPlQpGeTbIE","y"],["7Ti_kybY0po","y"],["V-GqTr8THJg","y"],["swx3Z-eyB54","y"],["FmqYmgTDDRU","y"],["TBy7jNR5tGI","y"],["3ylunl72PyE","y"],["z8Q7KjuG0T0","y"],["HB7iPiFExN4","y"],["PMBHVZArNyo","y"],["JpavK1XTvEc","y"],["-fkVvNMuJsA","y"],["JL94IJmZTjQ","y"],["https://soundcloud.com/djatat/avicii-levels-remix-full","s"],["_RoxhWM8yH0","y"],["Gm-bzIa2RA8","y"],["https://soundcloud.com/athenshelp/sets/summer-2013?utm_source=soundcloud&utm_campaign=share&utm_medium=facebook","s"],["jWyye9OneUM","y"],["PJZb6P_mVt0","y"],["z7ytPNb75Ho","y"],["xe5W9PD0I9c","y"],["ESAHQRm8POA","y"],["bt-RoSzsEKA","y"],["Jz5yAmglCR8","y"],["UKDihYBMvHQ","y"],["1v3CzvQ9e_w","y"],["rKTUAESacQM","y"],["-JKGfU-fan4","y"],["eIgNSYpjgX4","y"],["yModCU1OVHY","y"],["GQMpqw-i930","y"],["Koxa2fsoqyM","y"],["Ku_XpO4vdf0","y"],["lCY2F3raNt8","y"],["kw8o-GTjHP8","y"],["jcqjWDx95NA","y"],["gok-8dWaLRo","y"],["-dRFmZMGRk0","y"],["w7y19ED6Vrk","y"],["65LrsPAy5us","y"],["KB92vciysSg","y"],["xB29CI1a704","y"],["klfjwpoTgEw","y"],["KhXOecNsn9Q","y"],["hMsJlJdWof8","y"],["mg0dkJfrPYM","y"],["VvcohzJvviQ","y"],["Hm1s-s4WhvE","y"],["9Wy8bKYOhrA","y"],["jkjU9jtojVo","y"],["ZsKuYCy0aPA","y"],["k0mRfECsHrc","y"],["ev4ESucF53U","y"],["g9yaYvrp3B4","y"],["gOHM5zsRdqs","y"],["5XDssNGp_PE","y"],["ZGMDBppWBOo","y"],["dA57OSBrWLk","y"],["gS-_HKWsJXg","y"],["SYhUpUgxnMs","y"],["bvFuUaCe8eY","y"],["kS9fSjP2fD8","y"],["nCWiogdCMY0","y"],["PoXnHh_u4x4","y"],["lGdSYPh5_BI","y"],["HCh8O3aem5s","y"],["ZbJRNqQc8ME","y"],["qMYMC6atRoE","y"],["Pd1nG6KcH5A","y"],["S6ggyvN7hYc","y"],["Ai8bUHYGB10","y"],["RbZYk0ypPy8","y"],["zfr_JsV_z3Y","y"],["rbD5dShemps","y"],["xGytDsqkQY8","y"],["2H5uWRjFsGc","y"],["VV1XWJN3nJo","y"],["YgSPaXgAdzE","y"],["-KT-r2vHeMM","y"],["PbgKEjNBHqM","y"],["6WHAnkJFOMs","y"],["jMpt9pluq0w","y"],["7gphiFVVtUI","y"],["hVhAlWllKZM","y"],["7YR-AvTDctk","y"],["-ktf-Y3pg60","y"],["cDxN3ifvc7k","y"],["52j2GYmUV6g","y"],["eKQ0aDGfrOg","y"],["vz34IjAtMlA","y"],["UtdaCPOjztU","y"],["QhDewwSoks4","y"],["rF30RpT2cOU","y"],["eppW-k7lQXQ","y"],["UwfGceT-Ylg","y"],["BrnBIMJhvnA","y"],["t3KFc1Uon-w","y"],["zdeIN3sYcfk","y"],["8wmEoLMGksM","y"],["D6dS496Ph7Q","y"],["OffF0e2h4TU","y"],["GfbLWHT7vUU","y"],["6EfhAFA2yFE","y"],["jyLMgIR69G4","y"],["OvMfLEdtWLY","y"],["ABx4oqeYiIw","y"],["_uk9CFn5b7I","y"],["_ltvCuci4TM","y"],["kNct-j35pk0","y"],["LFmxjB02FTc","y"],["nVSiwMVaKe4","y"],["m01lPNVv90s","y"],["SBuIaiZvwg0","y"],["LLzimyJ3rCY","y"],["nVCMLWtVN5E","y"],["W3mb8HEZhRU","y"],["Vqq9iOBxOwQ","y"],["LB5YkmjalDg","y"],["duheoheyp-0","y"],["vHXy8zT0tn4","y"],["c6IZecaMttM","y"],["TS1W2xboKSA","y"],["mwYxW1hsADY","y"],["OizFZs-GyqI","y"],["kebq-cENNn0","y"],["dy8a_on3dbw","y"],["https://soundcloud.com/tri_angle_records/the-haxan-cloak-the-mirror","s"],["GQMlWwIXg3M","y"],["R82OM5tzcrk","y"],["NTE4lzeBUNI","y"],["N2Szutnrro0","y"],["if-UzXIQ5vw","y"],["sW6xaDGmffQ","y"],["qayc6yJXG-8","y"],["WBaEcMmMLTQ","y"],["gWBG1j_flrg","y"],["JbXLp2z6xL4","y"],["ZM7yVtd32LQ","y"],["2GA3a15xF0c","y"],["6IwCB-R0q3I","y"],["baExq6xNhQ8","y"],["B-UqPQ7ORGM","y"],["xetZZLmmEw8\\","y"],["c5Vht0Aj_Zk","y"],["uIZpyy79VEA","y"],["QhIfxUt-Joo","y"],["PARE49I4V6M","y"],["ihUIPlLw2ZE","y"],["yfySK7CLEEg","y"],["H6EH5QsYM10","y"],["wsImRREtOLY","y"],["qh3Rpv3vpBs","y"],["BRIfWPu8FMA","y"],["mbu5hmqMlek","y"],["Rj8yb7tkMK8","y"],["34ezwcrqRvo","y"],["Iof5pRAIZmw","y"],["FqGOy6YapVw","y"],["XWHplp10kQM","y"],["80nRE2u47xU","y"],["9wUJCw9qE5Ehttp://www.youtube.com/watch?v=9wUJCw9qE5E","y"],["jytxkJUM_7U","y"],["lHQh9VRj77M","y"],["YHZEtGS9XFo","y"],["MC6aAs4kkbY","y"],["ihZlQOaR8b8","y"],["eEoMI9BwHp4","y"],["HHqzpVdb4vU","y"],["y92IoM_ERcg","y"],["AsG1_3OTzyY","y"],["Ehs4k5EDUJE","y"],["wPlIw5lP49A","y"],["903oVzMObak","y"],["2a99jCLyXdc","y"],["adv4ROwgABY","y"],["BP0dIl1E-yY","y"],["NiNTrKsQ8TU","y"],["6fVE8kSM43I","y"],["vMCbJB4yNXo","y"],["yUiIo0xidjU","y"],["4vi9ZdJnDUE","y"],["r4OhIU-PmB8","y"],["c6L5Jo09l7U","y"],["5i7qZxICwgQ","y"],["adV8-_hgL4g","y"],["Ypkv0HeUvTc","y"],["boanuwUMNNQ","y"],["KSNKCfxcYvE","y"],["08fqHr_KGPY","y"],["usxRTi-zCT4","y"],["viLb49Ja1hs","y"],["_Lo6EGRt8zE","y"],["KpYAsYzCUFk","y"],["LnoDKgeXSPg","y"],["bSSn3NddwFQ","y"],["IpHiURKkY0Q","y"],["zhCheCryopA","y"],["Jqeyr-Kg280","y"],["GM80_377AF4","y"],["BO819Crxh_Q","y"],["gbbcei_CMok","y"],["32X-ieCav-M","y"],["tr3ftsCVXhc","y"],["widhbb0Ea0U","y"],["3KS4TeOnP18","y"],["8oh5wTDa4M8","y"],["mdLo0NptQz4","y"],["AJ1tpmBswSY","y"],["nvxnUr2JwBo","y"],["HayjUnLyB3Y","y"],["k3LBfITvkBk","y"],["g8KIdzgV83Y","y"],["LIkJ2SQZo9c","y"],["285LQj1-nHQ","y"],["oQAFFgbSY2c","y"],["4L_z_C5KZuY","y"],["VoypmykA81k","y"],["0kWfpu6XAOo","y"],["ocrTr56uhyw","y"],["ylNWezlt3O4","y"],["enRQi_5Nhsw","y"],["BN_lRa-rV0Q","y"],["3vvCR33I1x0","y"],["CbXMg6MHZ14","y"],["wf8cWuxweyk","y"],["fw-PjvZ4_FA","y"],["hglVqACd1C8","y"],["T0N5YblvT1c","y"],["XXvuUp-KY5g","y"],["oY9m2sHQwLs","y"],["I8PpySmFJcw","y"],["W81cErxoK9s","y"],["d638t7Q0gTg","y"],["JolW04xo9Wk","y"],["JKnN517WV-Q","y"],["j01g8DYULO4","y"],["6kv3mMK7EP8","y"],["ditwIepxz64","y"],["6hy44YlKNR0","y"],["ZmeudwRMrsU","y"],["RtDhGuEGgyc","y"],["JRNNbVw1ao0","y"],["yaTx9unXjLs","y"],["zQc-2bBmdfw","y"],["vxT6ZjWCw5A","y"],["rsmd-CGKvms","y"],["MKxosfl1E2g","y"],["Ik8mDD1Iugc","y"],["i1N2t7urWHU","y"],["2HhSS1hUUjQ","y"],["d-vZEShtlJE","y"],["5CU7oAS2XkY","y"],["bf7gd390Izo","y"],["RjxvyZbxdr4","y"],["jdMDcG3zAEI","y"],["JZqZCS0rCmE","y"],["g8LHbGyOVq0","y"],["BcR9IkzKIR8","y"],["WsZUv-5ewGs","y"],["QpLUQdyrsCY","y"],["i45sk_pg15A","y"],["PzHLPnGuVSQ","y"],["FBN2Z3yTKPo","y"],["07ziIduCXmU","y"],["jHDop-KFb5c","y"],["hP23rZTwcw4","y"],["86PVYhAhBGY","y"],["rJSIlQbt67M","y"],["c1YVPanmh0Q","y"],["-p0rCsuSCcs","y"],["3o4hKYNz7mY","y"],["0FWMyTCVuqc","y"],["zbCfcSz6VlU","y"],["HDoKyzHzP14","y"],["Ujzp9ffPwPM","y"],["2aHEa-ckBKk","y"],["-58-36lSqG4","y"],["w211KOQ5BMI","y"],["H0kJLW2EwMg","y"],["6QJpY2VNP0E","y"],["Z78PjvfCVTQ","y"],["qwDLB8fFsgE","y"],["iCSFwGy9gQY","y"],["dX9hJZ3LTWw","y"],["88HJnar9e8w","y"],["jFQdvaU-JlY","y"],["pPe9OD9a0Qs","y"],["OTW4hRmHodU","y"],["6T3GMHXgDWA","y"],["r9yUCOelxS8","y"],["QhH3xho0woU","y"],["iXNfPCeLIas","y"],["ZVn6Kkn-eMo","y"],["MAS_667Cwkg","y"],["tb0xkgE97b8","y"],["Tp3QyRKdGOo","y"],["C-n6gpM5pFk","y"],["nlNantlznCA","y"],["Nco_kh8xJDs","y"],["pJh9OLlXenM","y"],["wbIMx2MYNXk","y"],["tA73k88NU-s","y"],["uEpZ70z0M0k","y"],["YiX_yrBi444","y"],["ZgPhsXHMSb8","y"],["Z-UJ0cJJraE","y"],["Fe7jvAwIPxc","y"],["X4QE6i9RS_Y","y"],["CUuXiAsV7BQ","y"],["pJnikMDhyV8","y"],["jIGiAxOJ0nQ","y"],["1_XbYz9J4W0","y"],["USXW34U8p_U","y"],["5M_jh4CA8a8","y"],["86DEKFissl4","y"],["TEgkdBDg-ik","y"],["I80pc9jZ_t8","y"],["bMt1ILTzCac","y"],["ou6JNQwPWE0","y"],["JAwo7DPUFUM","y"],["3VgNoKc_Gdw","y"],["s7L2PVdrb_8","y"],["qEGbjR1Y9Qo","y"],["5vNpQ5VNMx4","y"],["wKQOFkpMD0o","y"],["a82cNcjw3iw","y"],["0yvkoGZVajg","y"],["-DTtMA5xbYs","y"],["j25tkxg5Vws","y"],["-mfEbuOx6IM","y"],["X9jDQdocqCI","y"],["0bqZFp7dWbg","y"],["qIkW5okTFtg","y"],["UdEiH6BbiDQ","y"],["yb1oge5nHQk","y"],["M76o1bFw-0Q","y"],["Qz8KsxGnznQ","y"],["KTziEYjkCAY","y"],["bCf40wrpdlc","y"],["_m5ZcadZWwQ","y"],["cDzPB5hfBO8","y"],["gml-nAJGRbY","y"],["IdD3nDbj-s8","y"],["J0PQ6GC6KYc","y"],["TJEhkRSnFJE","y"],["8afKh4Sfgdo","y"],["1UvIj1z-x-k","y"],["gY3KHxZp5ao","y"],["pOorzEstCjw","y"],["I8sUC-dsW8A","y"],["nOuKdeZ2x-M","y"],["WB85HAUXbbM","y"],["LEoGQU_k78k","y"],["FOQD1F7gAq8","y"],["h7GZLRxVzvg","y"],["5b7M43mkmPI","y"],["-6e5vnJcRYo","y"],["FcUi6UEQh00","y"],["EIurAP4yHtQ","y"],["hOMC9ks71AY","y"],["IdZgcR6YYZ8","y"],["xdzYh1-MhjY","y"],["aeE82XyNkyM","y"],["eIANchfl7Z8","y"],["mSp4RrTo04s","y"],["AbnKzRvNTD8","y"],["ibDLLDOYfmY","y"],["kwPZmcgUBJM","y"],["dOceTv122Ok","y"],["-dSztjpJNNk","y"],["GN8e-rdrwxY","y"],["eNBc3J3GEzk","y"],["QfU-4Y4_akY","y"],["hIjWoq9TMdo","y"],["GIbjpev6U5s","y"],["Fer_vdrd2L4","y"],["pIo81Fk6J5g","y"],["b8rUQLRH844","y"],["s3RhHwPRSaA","y"],["MCWaN_Tc5wo","y"],["JYxnqHLd0Ew","y"],["G2PTqPrdt40","y"],["QFmV6wYp_9U","y"],["yzfCFFCSnLE","y"],["-X5_q4a9HQs","y"],["R3Zt1lUEoE4","y"],["hfWkrqIQ4V0","y"],["-YyiE2F_2uE","y"],["Bp2tQ75pTD0","y"],["g4-2onb62y8","y"],["GhK81hZj4L4","y"],["a3ir9HC9vYg","y"],["cyJLCa4EHxE","y"],["8k6SS6uWI-k","y"],["1YrrAroK6bI","y"],["ybrTlJOOBas","y"],["CNg9Hy35VZo","y"],["vC2vqPHUw7s","y"],["ajBTb0xIFek","y"],["RLaI1EyfitU","y"],["hTGUnELHOIk","y"],["g2zgVcP5WYU","y"],["QBHnESrmmM0","y"],["j9tHeKgtm-c","y"],["0AniSPGSO5U","y"],["dUQr_GqYCQ0","y"],["ybGOT4d2Hs8","y"],["NuTmSmK5GzI","y"],["fc0Lybbs9lQ","y"],["YWVfCU-UVx0","y"],["3eYp5SXVXIA","y"],["Hvd3MUgnt_0","y"],["t-OKxPR5kSI","y"],["9K2kzJJOil0","y"],["a7FqUNlEdwA","y"],["TlS247blB2c","y"],["G6LBmGtFK0c","y"],["-MkRuV0aCcI","y"],["fG8UuZ0NZGY","y"],["3jHQqcky_Aw","y"],["mxzGbyjnAl4","y"],["bLpaBfiGWbc","y"],["0d6fyu3NwDI","y"],["y9ai5cgFar0","y"],["sBfrpu7vBGg","y"],["oIr8-f2OWhs","y"],["vsvlsuLau5c","y"],["Jhl9pJB-2Ak","y"],["8yKG-Qu4WvM","y"],["O0i6YFrSs6c","y"],["sEFIZh_Zscc","y"],["mW2WHHAJ0XI","y"],["Q9E3VR8Fnj0","y"],["VKrPtx6LzrU","y"],["Ghax-pOq17s","y"],["39-8GbB9MkU","y"],["9ywR1I20KMQ","y"],["Z7q92aNAERE","y"],["clcHxg9l5Bk","y"],["_RiBCgFwxXI","y"],["txirj1vX_Ck","y"],["mh-LjGXmirQ","y"],["EEDXdHVIG88","y"],["c98gIxCe1zo","y"],["CZ_VFJn2kJM","y"],["v6oNE2lT8R4","y"],["nBgQPSUTWVM","y"],["8jIq4uLNGW4","y"],["FAW3vTunYfI","y"],["AY10UoLQQMw","y"],["MyWfc5qAZOc","y"],["Xjdkc14-zwQ","y"],["N7bIMrNjMk8","y"],["e5JWDlj8ulY","y"],["5V-RpYzKfx8","y"],["uz9FkYrhdfU","y"],["Ry1dSq3e1Ls","y"],["NoVZK9Tz3HU","y"],["_8yGGtVKrD8","y"],["undefined","y"],["87TclF_txfI","y"],["JFXo8e1RrIM","y"],["m5vw4ajnWGA","y"],["NZxmuMmPLUU","y"],["NzQHkZaoX4M","y"],["cwi48UlkA3w","y"],["HpP-8tJ-9Js","y"],["EQ8ViYIeH04","y"],["Xmq9T0MZ_RQ","y"],["I2mSwqXPNyE","y"],["Orlbo9WkZ2E","y"],["-qxa91EwFco","y"],["RhYwLDkxJYA","y"],["DigtCrO77L8","y"],["Wvu3UhXeLg8","y"],["zWX4XSfW9h0","y"],["ZzNiAUXYg7A","y"],["-PNUey8RiBU","y"],["i_6KTZgayxg","y"],["XX5Dan0VE7w","y"],["G4v8X_Zi-xY","y"],["YanjY9CsPDQ","y"],["n2bYJQFQMs8","y"],["g0bZtf5MCzY","y"],["sXxnGL_vISc","y"],["b6qRLqgfcw4","y"],["NbKAh3zJmH8","y"],["GRj7-Ymrh5E","y"],["yJd2mdtUJ7w","y"],["ad_chktqWLo","y"],["4z6vpiXQJNA","y"],["gbBKh2T7Cdg","y"],["9kAdLiizR-4","y"],["MxjAzoaNQuo","y"],["PGwPSPIhohk","y"],["yVDUTX3g94A","y"],["M9JEPeeohYs","y"],["v8Djdi6z0m8","y"],["LH_9lJxeiXg","y"],["zjAxCx95mO8","y"],["KkRcwqxLEuk","y"],["mR9WJSX9pnU","y"],["jU1GqciiQRY","y"],["pq-jEHZ-EFc","y"],["TUCdo2Cne48","y"],["GjDBThwcsts","y"],["rfvNLeSzmME","y"],["ykkFcVxvPU4","y"],["fcTKXMGKGeQ","y"],["3aiwnwAh2oM","y"],["pZNQNELfd0g","y"],["rLkdkMst8j8","y"],["A_a8DWjsoyY","y"],["6Wnl9PpnTXI","y"],["vckDXk2Km_Q","y"],["fHFH2uc4Y9M","y"],["njuo1EKzjuQ","y"],["rcEubs0IzPg","y"],["qjtRL2Omz6w","y"],["C7WanzlOvGg","y"],["flcNU-0v8YQ","y"],["2O3Vk-yS97A","y"],["acwz2t82-wM","y"],["0P9QMkm9Eew","y"],["F6KeAphCN-k","y"],["0a7t9DcYusQ","y"],["G-d9br31gJE","y"],["T8LhDohyec4","y"],["NhPd4Xwbjrk","y"],["jiNUL1A5roM","y"],["cI7Hb1HJECA","y"],["k73VRUXV7r8","y"],["ARLPT5rKjWo","y"],["VyoDbX1EkPQ","y"],["GZDl_R8Zp2E","y"],["STl30zvOvzU","y"],["-QtWTRW4R-Y","y"],["tKKfnyvTKoA","y"],["zSg6talwzbU","y"],["V1aJPEFtoNg","y"],["lMSyLA6p6mQ","y"],["LtaTsgipLtU","y"],["yNCVriK5PjI","y"],["8ERupp4cMU4","y"],["tCK03Po10iE","y"],["0rh0xvLxIAI","y"],["nagI_slIviA","y"],["aNNFmRX5lKE","y"],["n7Oqe_NgsDU","y"],["7cJnyrvWVnw","y"],["Dg4W4K2XnY8","y"],["wg8kphT09qs","y"],["qEq68MfLvtI","y"],["awYC6LeJj2w","y"],["F7Kv0XzSR5M","y"],["eJStWiqSOpU","y"],["GU7vRCO8Onc","y"],["9j32VMZDQL0","y"],["_O7iD6UfAZ4","y"],["6A91UB3QkdE","y"],["zECoOQ668nA","y"],["NoooscPFiyc","y"],["znJGiSqfbas","y"],["ObXlNlMxLnY","y"],["57TAAGSwDo4","y"],["z5rRZdiu1UE","y"],["JhqyZeUlE8U","y"],["qORYO0atB6g","y"],["SL-KwE64c6U","y"],["YYb9kSCkjE8","y"],["ghZpyHP7B_g","y"],["8YWytXMn5ug","y"],["2pOUWwNuAo4","y"],["-8iT9UX_Btg","y"],["LZBnylvJnFQ","y"],["GU8QQDgO40I","y"],["eJS2HST11HM","y"],["lJXI87c7JyE","y"],["nKUo1HHfpUY","y"],["zbBD3W8f4_8","y"],["sXZE5E-23Ck","y"],["2Hu5f2fYNX0","y"],["mFjoUdno7RM","y"],["6xb898sQtu8","y"],["07pLGIgyfjw","y"],["X9uk9IcoQ0w","y"],["IBH97ma9YiI","y"],["CJ1iMQA0egc","y"],["labytsb3gfI","y"],["BB0DU4DoPP4","y"],["99j0zLuNhi8","y"],["uwIGZLjugKA","y"],["KaLbCivhO-8","y"],["gM5xYwSZZoY","y"],["_-agl0pOQfs","y"],["rvoFroKSSqw","y"],["KiPyMciRWQQ","y"],["WojRRJrORIg","y"],["qlKs5_gABsI","y"],["bejfegD6-NI","y"],["qRg0XsubUJQ","y"],["lsV500W4BHU","y"],["gv_f-8pt9wE","y"],["zy5ngAiLKvc","y"],["KTQmClWe5N4","y"],["xf20Effo6ds","y"],["TVAigUxiBbI","y"],["orYHFDJVK1M","y"],["-IUSZyjiYuY","y"],["tg00YEETFzg","y"],["kfVsfOSbJY0","y"],["NXm1GNBjibw","y"],["gFJMcAB5SFU","y"],["ON-7v4qnHP8","y"],["XAaUkcUY2ew","y"],["24VFmHOFlko","y"],["DHmYC8a_4cI","y"],["XG8k4IYIgvo","y"],["RkfzXq0tA3c","y"],["hlbRWWUNXxo","y"],["KbiquylYyfY","y"],["r55AxbkGVtA","y"],["pm_aut6RDAY","y"],["rH0tbfKKbYc","y"],["qPePbVA4jy4","y"],["TR0P6vUnnaQ","y"],["p8_Pf8zP-lo","y"],["-Ya0-gmoKXQ","y"],["87WRO9yQVNQ","y"],["fvZqWq0ZNjk","y"],["u1iXGjmLya0","y"],["UWqWVvTd62A","y"],["ZNdl_vOrPbM","y"],["UhjG47gtMCo","y"],["_z2O289Jemo","y"],["bPC9wvTpvL4","y"],["7E-_J5WWkoc","y"],["gWynJCi_DSY","y"],["xPU8OAjjS4k","y"],["DRf9oe2UgiA","y"],["0WptignJ_qs","y"],["0jCA7F7aHxA","y"],["rHRgBoq8UKw","y"],["jLyHHwDXw5Y","y"],["wl0XLHy7kes","y"],["Nj6SO_yKMe8","y"],["vc6vs-l5dkc","y"],["K1HEiQJEmBg","y"],["XeolH-kzx4c","y"],["izdScR05MBg","y"],["OBb3Mh2mVs0","y"],["PN1YpMtPIpE","y"],["KpJOR9ew9f4","y"],["jP--MxYzTuo","y"],["mcGt1_Ybn1M","y"],["8FNfB6WfwM4","y"],["f9DoM2W0YDQ","y"],["UZ6ZvsYwFlA","y"],["mxbTRh1o_RU","y"],["7a0Z2yndlOs","y"],["nU1VfYYKMDk","y"],["ZdgE0VlYPKA","y"],["9DaLN0AH32s","y"],["-S08Af4fqso","y"],["VQ53P2MDFv4","y"],["Zwn8mEe8bCI","y"],["B3LQzUq9H4I","y"],["oxOsv_nKYFU","y"],["k5JkHBC5lDs","y"],["4skR6rqwCuI","y"],["MR5JV3qXbak","y"],["knx0pqtcdhM","y"],["eN0j5xItIPg","y"],["e-PkIMrMF_w","y"],["dPH-vhpEnaI","y"],["CNAkbbKycCM","y"],["UFwf7gRiLYM","y"],["XN4chS4TPdc","y"],["HM2ZLS4Xgw8","y"],["H7nQSlSfX-I","y"],["kssSm6YW1SM","y"],["D4ygLYHKtCY","y"],["o9hpuy6qMlc","y"],["c99SZIiOrG4","y"],["Of4HJ5Lmigw","y"],["dGvqMXYhYhU","y"],["mBcDoZnN8ac","y"],["ncVTPuU7CBY","y"],["MTaqc3_5oYg","y"],["8R8MkEsgf-I","y"],["LUEIn9ZFy-4","y"],["rh2rPGBSamE","y"],["YZR8S-nR3iE","y"],["x_rqcXTLDE0","y"],["0F0kK45lVyk","y"],["z4ih3JVrRPE","y"],["joEAb_y7ZYA","y"],["tS0mQ25ezq4","y"],["BNUEhLavV2k","y"],["u_F85bXrt_4","y"],["-FUAYez3nY4","y"],["312Sb-2PovA","y"],["YGf2HBdktqU","y"],["nXQjMqhORzw","y"],["QiyBq_llIbM","y"],["qc98u-eGzlc","y"],["8S9qb8fcisM","y"],["cRbKc32i09c","y"],["JNail6JjEiE","y"],["-_qMagfZtv8","y"],["cR6Tn-D6w0A","y"],["Sj7bJsYfp0o","y"],["T3m7SKpi9b0","y"],["S9x5jwi9w7Q","y"],["qWQ_Rmezi9o","y"],["UC01eq2Vkg0","y"],["pPNIgypS6mQ","y"],["UCNQU8ysDdY","y"],["lItXAvIjEQ0","y"],["aYDfwUJzYQg","y"],["_i7tqWMbUFU","y"],["D7sUh-DX7I0","y"],["jHkWksoB5BI","y"],["MFvYGq6k-98","y"],["lX-5YVVeULA","y"],["7xXEtO3bEe0","y"],["jGKNaIXtBZQ","y"],["JOq8CuFJbWY","y"],["SMG1WCVff0I","y"],["ClQcUyhoxTg","y"],["kSAyD-Hsm34","y"],["p-W6k_jpcuk","y"],["PDgJpQZae0E","y"],["FgoI7ML2JoQ","y"],["YtQqK7BWq_c","y"],["953PkxFNiko","y"],["SjzOUf0AEiQ","y"],["FSkd3V-dRY0","y"],["mYkhNWIdra0","y"],["gsrhhxcbqE0","y"],["63guoWW5Y3E","y"],["mnXfBxTmmoU","y"],["0g-1UG8rX1o","y"],["AogGLXkUuvQ","y"],["JfG0KIsQZyE","y"],["r8j4RS7FyQs","y"],["-ozkfFav2Rk","y"],["C2HhJkOsFus","y"],["MyTwqEOJBfo","y"],["QcCsJStBQrI","y"],["3ZxUrfvpWVI","y"],["xBJBYaMnhfw","y"],["GJ3gSd-l1Jk","y"],["yGU60-6A6Xg","y"],["nS3Cxg7AMtg","y"],["64x_RCArfjU","y"],["Dc8bpyjvFQw","y"],["h2lrgDR2vI0","y"],["JIrv2wy3SNM","y"],["ORNS3yHWdL8","y"],["HGe8F_zbuEA","y"],["HLINRoC4f1k","y"],["DUhz10lEyIw","y"],["S7S-RhlG1bk","y"],["IpGp-22t0lU","y"],["aS-gGYaA8F0","y"],["qUpacRemMCA","y"],["ufWk5JD07SY","y"],["KT932azGKaQ","y"],["ebhVhkba3Xk","y"],["YMPF6lpM0XM","y"],["GI7dpNb1vVM","y"],["8ahU-x-4Gxw","y"],["PXjW-LYcbHQ","y"],["s-qvIvBhSX8","y"],["N2RNe2jwHE0","y"],["X8e8qXxwDu8","y"],["nfsb5HUFMQ0","y"],["2vEStDd6HVY","y"],["Eguq53eOWmI","y"],["mj3bL4sLx7s","y"],["EV6E13xODyA","y"],["gj2Tocsk1dM","y"],["r2S1I_ien6A","y"],["wrk_cEmNnPc","y"],["Ntc4l-poovo","y"],["rlV8O_1n1-M","y"],["3D6nt2bviIU","y"],["TyG3AtzN1OM","y"],["K8k9rD7lx9c","y"],["96sdn-vj1nk","y"],["WP38o-dY3PE","y"],["lrsj653088E","y"],["lp_PIjc2ga4","y"],["LFbUrBFF2Lk","y"],["e58y4ksQ65E","y"],["VduvB5xY2L0","y"],["GMoZmPvoWK0","y"],["Lt7AFe1Bnh0","y"],["-z02Y54Ce3U","y"],["-79nWjiz-XI","y"],["abCZZQ6UdBU","y"]];
 
 //this is youtube api stuff, not going to lie sort of a blackbox for me
-var tag = document.createElement('script'); 
-tag.src = "https://www.youtube.com/iframe_api";
+var tag = document.createElement('script');
+tag.src = "http://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player; // the end of the youtube api stuff
 
 
 // varible that stores youtube vs sound cloud
-var types; 
+var types;
 // array for keeping track of recently played
-var badlist = []; 
+var badlist = [];
 
 //generic function for changing the face. May be insecure, look into sanitization of it
 function writeout (id, data){
@@ -27,26 +27,26 @@ function writeout (id, data){
 }
 
 //keeps track of the streak counter and modifies the page to make it display
-function streaks(){ 
+function streaks(){
 
 	streak++;
 	writeout ("streakcounter", streak);
 }
 
 //this is what actually selects a video
-function ranvideo(){ 
+function ranvideo(){
 
 	//first a random number between 0 and length of the txt array
-	var prinran= Math.floor(Math.random() * txt.length);	
-	
+	var prinran= Math.floor(Math.random() * txt.length);
+
 	//this is the variable the selected url is in
 	arval = txt[prinran];
-	
+
 	//the area that pulls data out of the selected array (within the array of selectable arrays). Despite not really needing to be stored in array its done so I can add more info later
 	var playerneeded = arval[1];
 	var videoiden =arval[0];
-	
-	
+
+
 	//selects the correct API to throw the link at
 	if (playerneeded=='y'){
 		// should really flip the order of these ifs in the future, seems like an unnecessary duplication of function
@@ -76,7 +76,7 @@ function ranvideo(){
 
 //blackbox
 //this loads the youtube video using the api. It's different then change video in that it actually loads the youtube player
-function loadyoutube(ran){ 
+function loadyoutube(ran){
 
 	var elem = document.getElementById("videoWrapper");
 	elem.setAttribute("style"," padding-bottom: 36.25%;");
@@ -86,24 +86,24 @@ function loadyoutube(ran){
 			'onReady': onPlayerReady,
 			'onStateChange': statechange,
 		}
-	}); 
-}	 
+	});
+}
 
 
 //blackbox
 // this loads a sound cloud embeds through the api
-function loadsoundcloud(ran) { 
+function loadsoundcloud(ran) {
 
 	var elem = document.getElementById("videoWrapper");
 		elem.setAttribute("style"," padding-bottom: 9.25%;");
-	
+
 	var vid = document.getElementById("video");
 		vid.innerHTML ="<iframe id='soundcloud_widget' src='http://w.soundcloud.com/player/?url=https://api.soundcloud.com/' width='60%' height='120' frameborder='no'> </iframe>";
-  
+
 	var widget = SC.Widget(document.getElementById('soundcloud_widget'));
 		widget.load(ran,{auto_play : true});
     widget.bind(SC.Widget.Events.FINISH, function(player, data) {
-		
+
 			//loop checker is stored inside of here because I think that I couldn't get the events.FINISH to work outside of it
 			if(document.getElementById("loop").checked){
 				streaks();
@@ -111,11 +111,11 @@ function loadsoundcloud(ran) {
 			}
 			else{
 				streaks();
-				next(); 
-			}                 
+				next();
+			}
 		});
-	
-}	
+
+}
 
 // this starts a youtube video if it's been loaded. From the documentation youtube's api, this is what the player calls when loaded
 function onPlayerReady(event) {
@@ -124,7 +124,7 @@ function onPlayerReady(event) {
 
 
 // this is what determines if a youtube video is finished
-function statechange(event) { 
+function statechange(event) {
 	if ( event.data == 0 ) {
 		//sound cloud version of this is in the soundcloud api function above
 		if(document.getElementById("loop").checked){
@@ -133,31 +133,31 @@ function statechange(event) {
 		}
 		else {
 			streaks();
-			next(); 
+			next();
 		}
 	}
-}  
+}
 
 
-//this is the function that is SSR 
-function next(){ 
+//this is the function that is SSR
+function next(){
 //this is going to be fun
-	
+
 	//At the begining of this function types is set to whatever the currently playing video's type is. This is moved to a new variable so it can be remembered
 	var stype = types;
-	
+
 	//ranvideo changes types to what the randomly selected video needs. vi should be an array randomly selected by ran video (I don't do this for some reason)
 	var vi= ranvideo();
-	
+
 	//getting that information
 	var playerneeded = arval[1];
 	var videoiden =arval[0];
-	
+
 	//setting this for the next time next is run
 	types = arval[1];
-	
+
 	// so the basic way this works is it determines if the existing loaded thing is sound cloud or youtube, and then it will either use the api to load the right player or play a new thing in the excisting one
-	if (stype=='y'&&playerneeded=='y'){ 
+	if (stype=='y'&&playerneeded=='y'){
 		player.loadVideoById(videoiden);
 	}
 	else if (stype=='s'&&playerneeded=='s'){
@@ -176,7 +176,7 @@ function next(){
 
 
 // this clears the existing players stuff to load a new one. needed to have a transition between them (I think)
-function pageready(){ 
+function pageready(){
 
 	var vid = document.getElementById("videoWrapper");
 	//should really be using that function up top
@@ -187,12 +187,12 @@ function pageready(){
 //blackbox
 // This is the first thing that the youtube api calls on loading, not that a youtube video is the thing loaded
 function onYouTubeIframeAPIReady(){
- 
+
 	var vi= ranvideo();
 	var playerneeded = vi[1];
 	var videoiden =vi[0];
 	types = vi[1];
-	
+
 	// the reason for all this stuff is because youtube api loads by default, and it was easiest to know the page loaded when it loaded However I still needed to switch for soundcloud
 	if(playerneeded=='y'){
 		loadyoutube(videoiden);
@@ -204,7 +204,7 @@ function onYouTubeIframeAPIReady(){
 
 
 //checks and makes sure the video hasn't recently been played
-function recent(check){ 
+function recent(check){
 
 	if(jQuery.inArray(check, badlist)!==-1){
 		return "do";
@@ -218,51 +218,51 @@ function recent(check){
 
 
 //this gets other info from the you video, like the title. Thinking of removing this and storing it in the array of arrays (txt)
-function youtubeinfo(id){ 
+function youtubeinfo(id){
 
 	//this is a weird habit I have
 	var video_id=id;
-	
+
 	//yeah I'm not sure why youtube uses data.data. their json is weird
 	$.getJSON('http://gdata.youtube.com/feeds/api/videos/'+video_id+'?v=2&alt=jsonc',function(data,status,xhr){
 		//ytitle is the id of the area the title goes on the main page
 		writeout("ytitle", data.data.title );
-		
+
 		// youtube loads each video with an extra second which it removes. I don't know why and cant find out why
-		var longness = data.data.duration; 
-		
+		var longness = data.data.duration;
+
 		// not used yet
 		var embededness = data.data.accessControl.embed;
 		//This is still in for trouble shooting why videos dont work
 		console.log(embededness);
-		
+
 		//I suspect there is a better place to call this
 		longnessswitch(longness);
 	});
 }
 
 // sound cloud version of above
-function soundcloudinfo(id){ 
+function soundcloudinfo(id){
 
 	var video_id=id;
 	$.getJSON('http://api.soundcloud.com/resolve.json?url='+video_id+'&client_id=3baa436db3a25fba35306a68e4d9d0d1',function(data){
-	
-		writeout("ytitle", data.title );	
+
+		writeout("ytitle", data.title );
 		var longness = data.duration;
-		
+
 		// sound cloud gives time in stupid units (milliseconds)
-		longness = longness/1000; 
+		longness = longness/1000;
 		longnessswitch(longness);
-		
+
 	});
 }
 
 
 // this is the thing that runs the <10 min switch
-function longnessswitch(vid) { 
+function longnessswitch(vid) {
 
 	if(document.getElementById("tenmin").checked){
-		
+
 		//youtube adds an extra second on load and I don't know why, and the extra second won't kill anyone on sound cloud
 		if (vid >= 601){
 			next();
@@ -272,17 +272,17 @@ function longnessswitch(vid) {
 
 // this is the thing that switches between the two sets of arrays above
 //it's called each time one of the check marks is checked
-function changestation(){ 
+function changestation(){
 
 	//sets the url pool to nothing, since I cant figure out any other way of reliably adding and removing arrays
-	txt = []; 
-	
+	txt = [];
+
 	// if it's checked, add the correct pool to the large pool. I need better terms for this stuff
 	if (document.getElementById("POLYPS").checked){
 		var temparray = txt.concat(polytxt);
 		txt = temparray;
 	}
-	
+
 	if (document.getElementById("sicknew").checked){
 		var temparray = txt.concat(sicknewmusictxt);
 		txt = temparray;
