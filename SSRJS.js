@@ -85,6 +85,8 @@ function loadyoutube(ran){
 		events: {
 			'onReady': onPlayerReady,
 			'onStateChange': statechange,
+			'onError': badvideo
+
 		}
 	});
 }
@@ -114,6 +116,10 @@ function loadsoundcloud(ran) {
 				next();
 			}
 		});
+		widget.bind(SC.Widget.Events.ERROR , function(player, data) {
+			console.log("skippedS");
+			next();
+		});
 
 }
 
@@ -136,6 +142,13 @@ function statechange(event) {
 			next();
 		}
 	}
+}
+
+
+function badvideo(event) {
+	console.log("skipped");
+	next();
+
 }
 
 
