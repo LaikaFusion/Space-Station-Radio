@@ -116,6 +116,7 @@ function loadsoundcloud(ran) {
 				next();
 			}
 		});
+		//when sound cloud errors this skips the resulting track
 		widget.bind(SC.Widget.Events.ERROR , function(player, data) {
 			console.log("skippedS");
 			next();
@@ -144,7 +145,7 @@ function statechange(event) {
 	}
 }
 
-
+//called when youtube doesn't load a video and errors instead
 function badvideo(event) {
 	console.log("skipped");
 	next();
@@ -229,46 +230,6 @@ function recent(check){
 }
 
 
-
-//this gets other info from the you video, like the title. Thinking of removing this and storing it in the array of arrays (txt)
-function youtubeinfo(id){
-
-	//this is a weird habit I have
-	var video_id=id;
-
-	//yeah I'm not sure why youtube uses data.data. their json is weird
-	$.getJSON('http://gdata.youtube.com/feeds/api/videos/'+video_id+'?v=2&alt=jsonc',function(data,status,xhr){
-		//ytitle is the id of the area the title goes on the main page
-		writeout("ytitle", data.data.title );
-
-		// youtube loads each video with an extra second which it removes. I don't know why and cant find out why
-		var longness = data.data.duration;
-
-		// not used yet
-		var embededness = data.data.accessControl.embed;
-		//This is still in for trouble shooting why videos dont work
-		console.log(embededness);
-
-		//I suspect there is a better place to call this
-		longnessswitch(longness);
-	});
-}
-
-// sound cloud version of above
-function soundcloudinfo(id){
-
-	var video_id=id;
-	$.getJSON('http://api.soundcloud.com/resolve.json?url='+video_id+'&client_id=3baa436db3a25fba35306a68e4d9d0d1',function(data){
-
-		writeout("ytitle", data.title );
-		var longness = data.duration;
-
-		// sound cloud gives time in stupid units (milliseconds)
-		longness = longness/1000;
-		longnessswitch(longness);
-
-	});
-}
 
 
 // this is the thing that runs the <10 min switch
