@@ -68,7 +68,7 @@ body {
 
 	 display: inline-block;
 	max-width: 50%;
-
+  max-height: 80%;
 	vertical-align: middle;
 }
 
